@@ -1,5 +1,3 @@
-// TODO: remove maybe
-export const lastN = n => arr => arr.length < n ? arr : arr.slice(arr.length - n);
 export const range = (start, end, step) => {
   const res = [];
   for (let i = start; i <= end; i += step) {
