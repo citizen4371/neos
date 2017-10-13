@@ -10,7 +10,6 @@ import {
   compareDayIdsByHazards
 } from './utils';
 
-
 const initState = {
   maxToShow: maxDaysToShow,
   maxHazardsToMark,
