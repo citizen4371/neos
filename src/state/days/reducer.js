@@ -48,7 +48,7 @@ export default function daysReducer(state = initState, action) {
       });
 
       const entities = { ...state.entities, [dayId]: dayData };
-      const idsToShow = range(Math.max(state.initTimestamp, timestamp - state.maxToShow * h24), timestamp, h24);
+      const idsToShow = [ ...state.idsToShow, timestamp ].slice(-6);
 
       return {
         ...state,
